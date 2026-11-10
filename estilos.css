@@ -1,0 +1,232 @@
+/* ==========================================================
+   Estilos del formulario: Registro de la persona Usuaria
+   Estilo inspirado en los bloques y colores de un juego de
+   construcción pixelado (tierra, pasto y piedra).
+   ========================================================== */
+
+/* ===== Selectores de elemento ===== */
+body {
+  margin: 0;
+  padding: 30px 15px;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 22px;
+  color: #ffffff;
+  /* Fondo de tierra hecho con cuadros */
+  background-color: #866043;
+  background-image:
+    linear-gradient(45deg, #70503a 25%, transparent 25%, transparent 75%, #70503a 75%),
+    linear-gradient(45deg, #70503a 25%, transparent 25%, transparent 75%, #70503a 75%);
+  background-size: 48px 48px;
+  background-position: 0 0, 24px 24px;
+}
+
+h1, h2 {
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: #fcdb05;
+  text-shadow: 3px 3px 0 #3f3f3f;
+  margin: 0 0 15px 0;
+}
+
+h2 {
+  font-size: 14px;
+  color: #55ff55;
+  text-shadow: 2px 2px 0 #1e1e1e;
+  margin: 0 0 20px 0;
+}
+
+label {
+  display: block;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 6px;
+  text-shadow: 2px 2px 0 #3f3f3f;
+}
+
+input,
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10px 12px;
+  font-family: "VT323", "Courier New", monospace;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #1e1e1e;
+  border: 4px solid #000000;
+  border-radius: 0;
+  outline: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8b8b8b;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #ffffff;
+}
+
+textarea {
+  resize: vertical;
+}
+
+fieldset {
+  margin: 0;
+  padding: 15px;
+  background-color: #5b5b5b;
+  border: 4px solid #000000;
+}
+
+legend {
+  padding: 0 8px;
+  font-size: 22px;
+  color: #fcdb05;
+  background-color: #000000;
+}
+
+/* ===== Selectores de id ===== */
+#contenedor {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+#encabezado {
+  padding: 30px 20px 20px 20px;
+  text-align: center;
+  background-color: #5b9a32;               /* pasto */
+  border: 4px solid #000000;
+  border-bottom: 16px solid #3a6b1d;
+}
+
+#formulario {
+  padding: 25px;
+  background-color: #7f7f7f;               /* piedra */
+  border: 4px solid #000000;
+  border-top: 0;
+  box-shadow: inset 4px 4px 0 #a5a5a5, inset -4px -4px 0 #555555;
+}
+
+#datos-personales {
+  background-color: #6b6b6b;
+}
+
+#sobre-mi {
+  background-color: #6b6b6b;
+}
+
+#intereses {
+  background-color: #6b6b6b;
+}
+
+#zona-boton {
+  text-align: center;
+  margin-top: 25px;
+}
+
+#boton-registro {
+  padding: 14px 30px;
+  font-family: "Press Start 2P", "Courier New", monospace;
+  font-size: 14px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #1e5c13;
+  background-color: #3fae2a;
+  border: 4px solid #000000;
+  border-radius: 0;
+  box-shadow: inset 4px 4px 0 #7ddc5f, inset -4px -4px 0 #277a1a;
+  cursor: pointer;
+}
+
+#boton-registro:hover {
+  background-color: #55c93e;
+}
+
+#boton-registro:active {
+  box-shadow: inset 4px 4px 0 #277a1a, inset -4px -4px 0 #7ddc5f;
+}
+
+#pie {
+  margin-top: 20px;
+  padding: 12px;
+  text-align: center;
+  font-size: 20px;
+  color: #d0d0d0;
+  background-color: #3f3f3f;
+  border: 4px solid #000000;
+}
+
+#pie p {
+  margin: 0;
+}
+
+/* ===== Selectores de clase ===== */
+.subtitulo {
+  margin: 0;
+  font-size: 26px;
+  color: #ffffff;
+  text-shadow: 2px 2px 0 #3f3f3f;
+}
+
+.seccion {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 4px solid #000000;
+  box-shadow: inset 4px 4px 0 #8a8a8a, inset -4px -4px 0 #4a4a4a;
+}
+
+.campo {
+  margin-bottom: 18px;
+}
+
+.campo:last-child {
+  margin-bottom: 0;
+}
+
+.opcion {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.opcion:last-child {
+  margin-bottom: 0;
+}
+
+.opcion label {
+  margin-bottom: 0;
+}
+
+/* Casillas cuadradas tipo bloque */
+.opcion input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  flex-shrink: 0;
+  cursor: pointer;
+  background-color: #1e1e1e;
+  border: 4px solid #000000;
+}
+
+.opcion input[type="checkbox"]:checked {
+  background-color: #3fae2a;
+  box-shadow: inset 0 0 0 4px #7ddc5f;
+}
+
+/* ===== Pantallas pequeñas ===== */
+@media (max-width: 500px) {
+  h1 {
+    font-size: 15px;
+  }
+
+  #formulario {
+    padding: 15px;
+  }
+}

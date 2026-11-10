@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de la persona Usuaria</title>
+
+  <!-- Tipografías pixeladas de Google Fonts (si no cargan, se usa una fuente monoespaciada) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <!-- Contenedor principal -->
+  <div id="contenedor">
+
+    <!-- Encabezado -->
+    <div id="encabezado">
+      <h1>Registro de la persona Usuaria</h1>
+      <p class="subtitulo">Crea tu cuenta y empieza tu aventura</p>
+    </div>
+
+    <!-- Formulario -->
+    <form id="formulario" action="#" method="post">
+
+      <!-- Sección: datos personales -->
+      <div class="seccion" id="datos-personales">
+        <h2>Datos personales</h2>
+
+        <div class="campo">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+        </div>
+
+        <div class="campo">
+          <label for="apellido">Apellido</label>
+          <input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido" required>
+        </div>
+
+        <div class="campo">
+          <label for="correo">Correo Electrónico</label>
+          <input type="email" id="correo" name="correo" placeholder="nombre@correo.com" required>
+        </div>
+
+        <div class="campo">
+          <label for="contrasena">Contraseña</label>
+          <input type="password" id="contrasena" name="contrasena" placeholder="Escribe tu contraseña" required>
+        </div>
+      </div>
+
+      <!-- Sección: sobre la persona -->
+      <div class="seccion" id="sobre-mi">
+        <h2>Sobre ti</h2>
+
+        <div class="campo">
+          <label for="descripcion">Descripción</label>
+          <textarea id="descripcion" name="descripcion" rows="4" placeholder="Cuéntanos brevemente sobre ti"></textarea>
+        </div>
+      </div>
+
+      <!-- Sección: intereses -->
+      <div class="seccion" id="intereses">
+        <h2>Intereses</h2>
+
+        <fieldset>
+          <legend>Selecciona tus intereses</legend>
+
+          <div class="opcion">
+            <input type="checkbox" id="tecnologia" name="intereses" value="tecnologia">
+            <label for="tecnologia">Tecnología</label>
+          </div>
+
+          <div class="opcion">
+            <input type="checkbox" id="arte" name="intereses" value="arte">
+            <label for="arte">Arte</label>
+          </div>
+
+          <div class="opcion">
+            <input type="checkbox" id="deporte" name="intereses" value="deporte">
+            <label for="deporte">Deporte</label>
+          </div>
+        </fieldset>
+      </div>
+
+      <!-- Botón de envío -->
+      <div id="zona-boton">
+        <button type="submit" id="boton-registro">Registrarse</button>
+      </div>
+
+    </form>
+
+    <div id="pie">
+      <p>Página creada para el Reto 3 · HTML y CSS</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
